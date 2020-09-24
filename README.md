@@ -1,11 +1,9 @@
 
 # InfiniteBooya Timber/Twig Starter Theme
 
-This theme will be used (and hopefully useful) during the Timber/Twig tutorials over at InfiniteBooya.com
+This theme will be used (and hopefully useful) during the Timber/Twig tutorials over at [InfiniteBooya.com](https://infinitebooya.com)
 
-It is heavily based off the Timber "Starter Theme" over at:
-
-https://github.com/timber/starter-theme
+It is heavily based off the [Timber "Starter Theme"](https://github.com/timber/starter-theme)
 
 ## Installing the Theme
 
