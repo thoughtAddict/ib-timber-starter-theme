@@ -7,4 +7,4 @@
 
 include_once(get_template_directory().'/common.php');
 
-Timber::render( "demoSimple-" . $frontend, $context );
+Timber::render( "demoSimple-" . $frontend . ".twig", $context );
