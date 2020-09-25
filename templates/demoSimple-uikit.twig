@@ -1,0 +1,33 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+<style>
+  .demoPageHero {
+    background: url("{{TimberImage(post.get_field('heroImage')).src}}") 50% no-repeat; 
+    background-size: cover;          
+  }
+</style>
+<div class="row">
+  <div class="demoPageHero" uk-grid>
+    <div class="uk-width-3-4@s">
+      {% if post.heroTitle != '' %}
+      <div class="demoPageHeroTitle">
+        {{post.heroTitle}}
+      </div>
+      {% endif %}
+      {% if post.heroDescription != '' %}
+      <div class="demoPageHeroDescription">
+        {{post.heroDescription}}
+      </div>
+      {% endif %}
+      {% if post.heroCTAVisible == 'show' %}
+      <div class="demoPageHeroCTA">
+        <a class="demoButtonPrimary" href="{{post.heroCTAUrl}}" target="{{post.heroCTATarget}}">{{post.heroCTAText}}</a>                        
+      </div> 
+      {% endif %}            
+    </div>
+  </div>      
+</div>
+
+{% endblock %}

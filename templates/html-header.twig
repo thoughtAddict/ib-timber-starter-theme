@@ -10,9 +10,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {{function('wp_head')}}
+  
+  {% if frontend == "b3x" %}
+  <link rel="stylesheet" href="https://cdn.infinitebooya.com/vendors/bootstrap/v3.4.1/css/bootstrap.min.css">
+  {% else %}
+  <link rel="stylesheet" href="https://cdn.infinitebooya.com/uikit/v3.1.8/css/uikit.min.css">
+  {% endif %}
 
   <style>
   
+    /* ---------------------------------*/
+    /*  Timber Starter Theme Overrides  */
+    /* ---------------------------------*/
     body {
       margin: 0;
       padding: 0;
@@ -40,5 +49,28 @@
       width: 100%;
       text-align: center;
     }
+    
+    /* ---------------------------------*/
+    /*  Demo - Standard Site-Wide       */
+    /* ---------------------------------*/
+    .demoButtonPrimary {
+      
+    }
+    
+    /* ---------------------------------*/
+    /*  Demo - Hero                     */
+    /* ---------------------------------*/
+    .demoPageHeroTitle {
+      
+    }
+    
+    .demoPageHeroDescription {
+      
+    }
+    
+    .demoPageHeroCTA {
+      
+    }
+    
     
   </style>

@@ -37,5 +37,13 @@
 			</footer>
 			{{ function('wp_footer') }}
 		{% endblock %}
+		
+    {% if frontend == "b3x" %}
+    <script type="text/javascript" src="https://cdn.infinitebooya.com/vendors/bootstrap/v3.4.1/js/bootstrap.min.js"></script>
+    {% else %}
+    <script type="text/javascript" src="https://cdn.infinitebooya.com/uikit/v3.1.8/js/uikit.min.js"></script>
+    <script type="text/javascript" src="https://cdn.infinitebooya.com/uikit/v3.1.8/js/uikit-icons.min.js"></script>
+    {% endif %}
+		
 	</body>
 </html>
