@@ -5,7 +5,8 @@
 <style>
   .demoPageHero {
     background: url("{{TimberImage(post.get_field('heroImage')).src}}") 50% no-repeat; 
-    background-size: cover;          
+    background-size: cover; 
+    min-height: {{post.heroImageHeight}}px;
   }
 </style>
 <div class="row">

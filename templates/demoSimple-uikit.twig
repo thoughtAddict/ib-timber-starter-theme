@@ -5,12 +5,13 @@
 <style>
   .demoPageHero {
     background: url("{{TimberImage(post.get_field('heroImage')).src}}") 50% no-repeat; 
-    background-size: cover;          
+    background-size: cover;  
+    min-height: {{post.heroImageHeight}}px;
   }
 </style>
 <div class="row">
   <div class="demoPageHero" uk-grid>
-    <div class="uk-width-3-4@s">
+    <div class="uk-width-2-3@m">
       {% if post.heroTitle != '' %}
       <div class="demoPageHeroTitle">
         {{post.heroTitle}}
